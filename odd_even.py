@@ -18,17 +18,4 @@ def prime(num):
                 return False
         return True
 
-
-def prime_range(start, stop=None, step=1):
-    """Return a generator for printing Prime Numbers in a range."""
-    if not stop:
-        stop, start = start, 0
-
-    for i in range(start, stop, step):
-        if prime(i):
-            yield i
-
-
-# Testing prime_range()
-for i in prime_range(10, 20):
-    print(i)
+print(prime(0))
