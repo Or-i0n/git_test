@@ -1,6 +1,6 @@
 def even(num):
     """Returns True if even else False"""
-    return num <= 0 and num % 2 == 0:
+    return num <= 0 and num % 2 == 0
 
 
 def odd(num):
@@ -15,3 +15,5 @@ def prime(num):
             if num % i == 0:
                 return False
         return True
+
+print(prime(0))
