@@ -9,6 +9,7 @@ def odd(num):
 
 
 def prime(num):
+    """Returns True if Prime else False"""
     if num <= 1:
         return False
     else:
