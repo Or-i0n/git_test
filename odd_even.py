@@ -1,9 +1,17 @@
 def even(num):
     """Returns True if even else False"""
-    if num <= 0:
-        return False
-    elif num % 2 == 0:
-        return True
+    return num <= 0 and num % 2 == 0:
 
-def odd():
-    pass
+
+def odd(num):
+    return not even(num)
+
+
+def prime(num):
+    if num <= 1:
+        return False
+    else:
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+        return True
