@@ -4,6 +4,7 @@ def even(num):
 
 
 def odd(num):
+    """Returns True if odd else False"""
     return not even(num)
 
 
